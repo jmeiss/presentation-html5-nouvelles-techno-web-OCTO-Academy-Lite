@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">Ï
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme.css" id="theme">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
@@ -53,8 +53,10 @@
         progress: true,
         history: true,
         center: true,
-        theme: 'sky', // available themes are in /css/theme
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
         backgroundTransition: 'slide',
 
         // Optional libraries used to extend on reveal.js

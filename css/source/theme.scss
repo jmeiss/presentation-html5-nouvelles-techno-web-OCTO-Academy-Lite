@@ -50,8 +50,15 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // ---------------------------------------------
 
 // Theme template ------------------------------
-@import "../../bower_components/reveal.js/css/theme/template/theme";
+@import "../../bower_components/reveal.js/css/theme/source/sky";
 // ---------------------------------------------
 
 // See ../../bower_components/reveal.js/css/theme/README.md
 // for further explanations on how reveal.js themes work.
+
+.no-border {
+  border: 0 !important;
+}
+.padding-img {
+  padding: 2% !important;
+}
