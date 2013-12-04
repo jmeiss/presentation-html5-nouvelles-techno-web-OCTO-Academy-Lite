@@ -5,5 +5,45 @@
     "une-histoire-complexe.html",
     "de-nombreuses-fonctionnalites.html",
     "de-nombreuses-fonctionnalites-2.html",
-    "support-par-les-navigateurs.html"
+    "support-par-les-navigateurs.html",
+    [
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2008.html",
+            "attr": {
+                "data-background": "img/features-browser-2008.png"
+            }
+        },
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2009.html",
+            "attr": {
+                "data-background": "img/features-browser-2009.png"
+            }
+        },
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2010.html",
+            "attr": {
+                "data-background": "img/features-browser-2010.png"
+            }
+        },
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2011.html",
+            "attr": {
+                "data-background": "img/features-browser-2011.png"
+            }
+        },
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2012.html",
+            "attr": {
+                "data-background": "img/features-browser-2012.png"
+            }
+        },
+        {
+            "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2013.html",
+            "attr": {
+                "data-background": "img/features-browser-2013.png"
+            }
+        }
+    ],
+    "support-par-les-navigateurs-2.html",
+    "utilisation-des-navigateurs.html"
 ]
