@@ -1,10 +1,7 @@
 # Generated on 2013-12-04 using generator-reveal 0.3.2
 module.exports = (grunt) ->
-
   grunt.initConfig
-
     watch:
-
       livereload:
         options:
           livereload: true
@@ -37,13 +34,11 @@ module.exports = (grunt) ->
         tasks: ['sass']
 
     sass:
-
       theme:
         files:
           'css/theme.css': 'css/source/theme.scss'
 
     connect:
-
       livereload:
         options:
           port: 9000
@@ -55,22 +50,18 @@ module.exports = (grunt) ->
           livereload: true
 
     coffeelint:
-
       options:
         indentation:
-          value: 4
+          value: 2
 
       all: ['Gruntfile.coffee']
 
     jshint:
-
       options:
         jshintrc: '.jshintrc'
-
       all: ['js/*.js']
 
     copy:
-
       dist:
         files: [{
           expand: true
@@ -98,7 +89,6 @@ module.exports = (grunt) ->
       indexTemplate = grunt.file.read 'templates/_index.html'
       sectionTemplate = grunt.file.read 'templates/_section.html'
       slides = grunt.file.readJSON 'slides/list.json'
-
       html = grunt.template.process indexTemplate, data:
         slides:
           slides
