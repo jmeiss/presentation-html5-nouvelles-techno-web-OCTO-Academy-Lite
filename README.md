@@ -1,4 +1,5 @@
-presentation-html5-nouvelles-techno-web
+Présentation : HTML5 Les Nouvelles Technologies du Web
 =======================================
 
-Présentation : HTML5 Les Nouvelles Technologies du Web
+Jonathan MEISS
+François PETITIT
