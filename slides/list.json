@@ -45,5 +45,13 @@
         }
     ],
     "support-par-les-navigateurs-2.html",
-    "utilisation-des-navigateurs.html"
+    "utilisation-des-navigateurs.html",
+    "et-encore-on-na-vu-que-les-navigateurs-desktop.html",
+    "multiplication-des-ecrans.html",
+    "multiplication-des-interfaces.html",
+    "multiplication-des-plateformes.html",
+    "comment-gerer-ces-differences.html",
+    "progressive-enhancement.html",
+    "graceful-degradation.html",
+    "patterns-de-developpements-graceful-degradation.html"
 ]
