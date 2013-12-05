@@ -53,5 +53,10 @@
     "comment-gerer-ces-differences.html",
     "progressive-enhancement.html",
     "graceful-degradation.html",
-    "patterns-de-developpements-graceful-degradation.html"
+    "patterns-de-developpements-graceful-degradation.html",
+    "patterns-de-developpements-progressive-enhancement.html",
+    "google-chrome-frame.html",
+    "google-chrome-frame-2.html",
+    "polyfills.html",
+    "modernizr.html"
 ]
