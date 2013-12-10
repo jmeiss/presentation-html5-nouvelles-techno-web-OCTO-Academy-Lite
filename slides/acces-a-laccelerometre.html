@@ -1,0 +1,26 @@
+<h2>Accés à l'accéléromètre</h2>
+
+<p><small>Support : Chrome</small></p>
+
+<ul>
+  <li class="fragment" data-fragment-index="0">
+    Accés au périphérique et à son orientation
+    <pre>
+      <code data-trim>
+window.addEventListener('deviceorientation', function(event) {
+  var a = event.alpha;
+  var b = event.beta;
+  var g = event.gamma;
+}, false);
+      </code>
+    </pre>
+  </li>
+  <li class="fragment" data-fragment-index="1">
+    Avantages :
+    <ul>
+      <li class="fragment" data-fragment-index="1">Gérer l'orientation de l'écran sur les mobiles</li>
+    </ul>
+  </li>
+</ul>
+
+<img class="fragment" data-fragment-index="1" height="300" src="img/accelerometer.png" />

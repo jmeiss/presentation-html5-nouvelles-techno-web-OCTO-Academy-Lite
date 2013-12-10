@@ -1,0 +1,30 @@
+<h2>FileReader API</h2>
+
+<p><small>Support : Chrome, FF, Opéra, IE</small></p>
+
+<ul>
+  <li class="fragment" data-fragment-index="0">
+    Drag & Drop files from and to the file system
+    <pre>
+      <code data-trim>
+element.ondragover = function () {...}
+element.ondrop = function (event) {
+  var file = e.dataTransfer.files[0], reader = new FileReader();
+  reader.onload = function (event) {
+    holder.style.background = 'url(‘+event.target.result+’);
+  };
+  reader.readAsDataURL(file);
+  return false;
+}
+      </code>
+    </pre>
+  </li>
+  <li class="fragment" data-fragment-index="1">
+    Avantages :
+    <ul>
+      <li class="fragment" data-fragment-index="1">Téléchargement et envoi de fichiers facilement</li>
+      <li class="fragment" data-fragment-index="2">Accès aux fichiers de la machine</li>
+      <li class="fragment" data-fragment-index="2">...</li>
+    </ul>
+  </li>
+</ul>
