@@ -1,0 +1,25 @@
+<h2>History API</h2>
+
+<p><small>Support : Chrome, FF, Opéra, Safari, IE</small></p>
+
+<p>Permet de manipuler l'historique du navigateur</p>
+
+<pre>
+  <code data-trim>
+history.pushState('Contact Page Form', 'Contact Page', '/contact');
+
+window.addEventListener('popstate', function(event) {
+  document.querySelector('h1').innerText = event.state; // 'Contact Page Form'
+});
+  </code>
+</pre>
+
+<ul>
+  <li>
+    Bénéfices :
+    <ul>
+      <li>Améliore la navigation</li>
+      <li>Utile pour la RIA (Gmail)</li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,30 @@
+<h2>Push de données et Web temps réel</h2>
+
+<p><small>Support : Chrome, FF, IE</small></p>
+
+<ul>
+  <li>
+    Communication bi-directionnelle client <-> serveur
+    <pre>
+      <code>
+var socket = new WebSocket('ws://localhost:9000');
+socket.onopen = function(event) {
+  socket.send(‘Hello socket’);
+}
+socket.onmessage = function(event) {
+  var data = event.data;
+  ...
+}
+      </code>
+    </pre>
+  </li>
+  <li class="fragment" data-fragment-index="0">Cas d'usage : consultation de cours en salle de marché</li>
+  <li class="fragment" data-fragment-index="1">
+    Bénéfices :
+    <ul>
+      <li class="fragment" data-fragment-index="1">Faire du temps réel entre le client et le serveur</li>
+      <li class="fragment" data-fragment-index="2">Envoyer des notifications (push notifications) via le web</li>
+      <li class="fragment" data-fragment-index="3">Réduire la consommation de la bande passante</li>
+    </ul>
+  </li>
+</ul>

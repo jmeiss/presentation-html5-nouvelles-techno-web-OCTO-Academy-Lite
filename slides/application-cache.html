@@ -1,0 +1,37 @@
+<h2>Application Cache</h2>
+
+<p><small>Support : Chrome, FF, Opéra, Safari, IE</small></p>
+
+<ul>
+  <li class="fragment" data-fragment-index="0">
+    Cacher un ensemble de fichiers spécifiés dans le navigateur
+    <pre class="fragment" data-fragment-index="1">
+      <code data-trim>
+&lt;html manifest="cache.manifest"&gt;
+      </code>
+    </pre>
+    <pre class="fragment" data-fragment-index="1">
+      <code data-trim>
+CACHE MANIFEST
+# version 1.0.0
+
+CACHE:
+/html5/src/logic.js
+/html5/src/style.css
+/html5/src/background.png
+
+NETWORK:
+*
+      </code>
+    </pre>
+  </li>
+  <li class="fragment" data-fragment-index="2">Attention au risque de "perdre" un utilisateur en cas d'erreur lors de la mise en place</li>
+  <li class="fragment" data-fragment-index="3">
+    Avantages :
+    <ul>
+      <li class="fragment" data-fragment-index="4">Navigation hors-ligne</li>
+      <li class="fragment" data-fragment-index="5">Chargement accéléré</li>
+    </ul>
+  </li>
+</ul>
+

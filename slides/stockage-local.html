@@ -1,0 +1,27 @@
+<h2>Stockage local</h2>
+
+<p><small>Support : Chrome, FF, Opéra, Safari, IE</small></p>
+
+<ul>
+  <li class="fragment" data-fragment-index="0">
+    Stockage de clés-valeurs sur le navigateur
+    <pre class="fragment" data-fragment-index="0">
+      <code data-trim>
+localStorage.setItem("key", "value");
+var value = localStorage.getItem("key");
+      </code>
+    </pre>
+    <ul>
+      <li class="fragment" data-fragment-index="1">Jusqu’à plusieurs mega-octets</li>
+      <li class="fragment" data-fragment-index="2">Peut être stocké pendant un temps indéterminé tant que l’utilisateur n’a pas vidé son cache, ou seulement le temps d’une session utilisateur</li>
+    </ul>
+  </li>
+  <li class="fragment" data-fragment-index="3">
+    Avantages :
+    <ul>
+      <li class="fragment" data-fragment-index="4">Très simple à mettre en oeuvre</li>
+      <li class="fragment" data-fragment-index="5">Attention : pas de sécurité si quelqu’un a accés au PC</li>
+      <li class="fragment" data-fragment-index="6">Données peu structurées uniquement</li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,24 @@
+<h2>IndexedDB</h2>
+
+<p><small>Support : Chrome, FF</small></p>
+
+<ul>
+  <li class="fragment" data-fragment-index="0">
+    Stockage d'objets, base non relationnelle
+    <pre class="fragment" data-fragment-index="0">
+      <code data-trim>
+var idbRequest = window.indexedDB.open('Database Name');
+idbRequest.onsuccess = function(event) {
+  var db = event.srcElement.result;
+  var transaction = db.transaction([], IDBTransaction.READ_ONLY);
+  var curRequest = transaction.objectStore('ObjectStore Name').openCursor();
+  curRequest.onsuccess = ...;
+};
+      </code>
+    </pre>
+    <ul>
+      <li class="fragment" data-fragment-index="1">Pas requête SQL</li>
+      <li class="fragment" data-fragment-index="2">Manipulation d'index</li>
+    </ul>
+  </li>
+</ul>

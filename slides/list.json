@@ -66,5 +66,22 @@
     "nouvelles-proprietes-css3.html",
     "acces-a-los.html",
     "filereader-api.html",
-    "acces-a-laccelerometre.html"
+    "acces-a-laccelerometre.html",
+    "fonctionner-hors-ligne.html",
+    "stockage-local.html",
+    "indexeddb.html",
+    "application-cache.html",
+    "offline-detection.html",
+    "css3-ameliorer-le-design-et-lutilisabilite.html",
+    "ameliorer-lexperience-utilisateur.html",
+    "nouvelles-fonctionnalites-css.html",
+    "nouvelles-fonctionnalites-css-2.html",
+    "nouvelles-fonctionnalites-css-3.html",
+    "nouvelles-fonctionnalites-css-4.html",
+    "support-des-differentes-tailles-decran.html",
+    "history-api.html",
+    "integrer-les-applications-entre-elles.html",
+    "ameliorer-la-re-activite.html",
+    "push-de-donnees-et-web-temps-reel.html",
+    "effectuer-des-traitements-longs-sans-bloquer-lihm.html"
 ]
