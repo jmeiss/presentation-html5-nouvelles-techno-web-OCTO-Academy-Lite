@@ -16,6 +16,10 @@ exécuter les commandes :
 
 Puis se connecter sur un navigateur sur l'URL http://localhost:9000
 
+Les démos
+=======================================
+http://localhost:9000/demos/developer.cdn.mozilla.net/media/uploads/demos/e/l/elfoxero/c17223c414d8ddafb7808972b5617d9e/html5-notifications_1383869079_demo_package/
+
 Reveal.js with Reveal Generator for Yeoman
 =======================================
 
