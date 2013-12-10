@@ -66,5 +66,19 @@
     "nouvelles-proprietes-css3.html",
     "acces-a-los.html",
     "filereader-api.html",
-    "acces-a-laccelerometre.html"
+    "acces-a-laccelerometre.html",
+    "securite.html",
+    "securite-points-dattention.html",
+    "integration-aux-frameworks-de-developpement.html",
+    "integration-aux-frameworks-de-developpement-courants.html",
+    "integration-a-gwt.html",
+    "nouvelles-architectures-web.html",
+    "nouvelles-architectures-web-mvc-client-side.html",
+    "nouvelles-architectures-web-exemple-dintegration-avec-java.html",
+    "webperfs.html",
+    "webperfs-impact.html",
+    "webperfs-bonnes-pratiques.html",
+    "outils.html",
+    "outils-markup-et-css.html",
+    "outils-dataviz-et-design.html"
 ]
