@@ -4,6 +4,17 @@ Présentation : HTML5 Les Nouvelles Technologies du Web
 Jonathan MEISS
 François PETITIT
 
+Pour lancer la présentation
+=======================================
+installer NodeJS, Ruby et la GEM Compas
+exécuter les commandes :
+- npm install -g grunt-cli
+- npm install -g bower
+- npm install
+- bower install
+- grunt server
+
+Puis se connecter sur un navigateur sur l'URL http://localhost:9000
 
 Reveal.js with Reveal Generator for Yeoman
 =======================================
