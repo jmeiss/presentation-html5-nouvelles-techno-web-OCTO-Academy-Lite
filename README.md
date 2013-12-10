@@ -18,7 +18,9 @@ Puis se connecter sur un navigateur sur l'URL http://localhost:9000
 
 Les démos
 =======================================
-http://localhost:9000/demos/developer.cdn.mozilla.net/media/uploads/demos/e/l/elfoxero/c17223c414d8ddafb7808972b5617d9e/html5-notifications_1383869079_demo_package/
+formulaires + notifications : http://localhost:9000/demos/formulaires-notifications/html5-notifications_1383869079_demo_package/
+gradients + border-radius : http://localhost:9000/demos/windows-calculator/
+
 
 Reveal.js with Reveal Generator for Yeoman
 =======================================
