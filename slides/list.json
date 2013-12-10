@@ -10,37 +10,43 @@
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2008.html",
             "attr": {
-                "data-background": "img/features-browser-2008.png"
+                "data-background": "img/features-browser-2008.png",
+                "data-background-size": "90%"
             }
         },
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2009.html",
             "attr": {
-                "data-background": "img/features-browser-2009.png"
+                "data-background": "img/features-browser-2009.png",
+                "data-background-size": "90%"
             }
         },
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2010.html",
             "attr": {
-                "data-background": "img/features-browser-2010.png"
+                "data-background": "img/features-browser-2010.png",
+                "data-background-size": "90%"
             }
         },
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2011.html",
             "attr": {
-                "data-background": "img/features-browser-2011.png"
+                "data-background": "img/features-browser-2011.png",
+                "data-background-size": "90%"
             }
         },
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2012.html",
             "attr": {
-                "data-background": "img/features-browser-2012.png"
+                "data-background": "img/features-browser-2012.png",
+                "data-background-size": "90%"
             }
         },
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2013.html",
             "attr": {
-                "data-background": "img/features-browser-2013.png"
+                "data-background": "img/features-browser-2013.png",
+                "data-background-size": "90%"
             }
         }
     ],
@@ -84,6 +90,14 @@
     "ameliorer-la-re-activite.html",
     "push-de-donnees-et-web-temps-reel.html",
     "effectuer-des-traitements-longs-sans-bloquer-lihm.html",
+    "geolocalisation.html",
+    "multimedia-sans-plug-in.html",
+    "nouvelles-interactions-homme-machine.html",
+    "multimedia.html",
+    "canvas.html",
+    "svg.html",
+    "svg-2.html",
+    "organisation-de-lecran.html",
     "securite.html",
     "securite-points-dattention.html",
     "integration-aux-frameworks-de-developpement.html",
@@ -94,16 +108,16 @@
     "nouvelles-architectures-web-exemple-dintegration-avec-java.html",
     "webperfs.html",
     "webperfs-impact.html",
+    {
+        "filename": "webperfs-exemple-webpagetest.html",
+        "attr": {
+            "data-background": "img/webperfs-wpt-velib.png",
+            "data-background-size": "90%"
+        }
+    },
     "webperfs-bonnes-pratiques.html",
     "outils.html",
     "outils-markup-et-css.html",
     "outils-dataviz-et-design.html",
-    "geolocalisation.html",
-    "multimedia-sans-plug-in.html",
-    "nouvelles-interactions-homme-machine.html",
-    "multimedia.html",
-    "canvas.html",
-    "svg.html",
-    "svg-2.html",
-    "organisation-de-lecran.html"
+    "pour-aller-plus-loin-liens-externes.html"
 ]
