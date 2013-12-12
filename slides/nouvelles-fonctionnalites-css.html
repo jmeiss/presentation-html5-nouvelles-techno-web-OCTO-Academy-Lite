@@ -1,13 +1,16 @@
 <h2>Nouvelles fonctionnalités CSS</h2>
 
-<p>Columns</p>
+<p>Transitions / Animations</p>
 
 <pre>
   <code data-trim>
--webkit-column-count: 3;
--webkit-column-rule: 1px solid #bbb;
--webkit-column-gap: 2em;
+div {
+  -webkit-transition: margin-left 1s ease-in-out;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
   </code>
 </pre>
-
-<img src="img/css-columns.png" />

@@ -71,9 +71,6 @@
     "css3-ameliorer-le-design-et-lutilisabilite.html",
     "ameliorer-lexperience-utilisateur.html",
     "nouvelles-fonctionnalites-css.html",
-    "nouvelles-fonctionnalites-css-2.html",
-    "nouvelles-fonctionnalites-css-3.html",
-    "nouvelles-fonctionnalites-css-4.html",
     "support-des-differentes-tailles-decran.html",
     "history-api.html",
     "integrer-les-applications-entre-elles.html",
@@ -119,8 +116,5 @@
         }
     },
     "webperfs-bonnes-pratiques.html",
-    "outils.html",
-    "outils-markup-et-css.html",
-    "outils-dataviz-et-design.html",
     "pour-aller-plus-loin-liens-externes.html"
 ]
