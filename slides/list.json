@@ -1,5 +1,6 @@
 [
     "index.html",
+    "agenda.html",
     "html5-rappel-historique.html",
     "html5-html-css-js.html",
     "une-histoire-complexe.html",
@@ -57,7 +58,6 @@
     "multiplication-des-interfaces.html",
     "multiplication-des-plateformes.html",
     "ameliorer-la-productivite-des-developpements.html",
-    "comment-passer-un-site-en-html5.html",
     "formulaires-avances.html",
     "nouvelles-proprietes-css3.html",
     "acces-a-los.html",
@@ -106,6 +106,7 @@
     "integration-a-gwt.html",
     "nouvelles-architectures-web.html",
     "nouvelles-architectures-web-mvc-client-side.html",
+    "nouvelles-architectures-web-api.html",
     "nouvelles-architectures-web-exemple-dintegration-avec-java.html",
     "webperfs.html",
     "webperfs-impact.html",
