@@ -1,7 +1,9 @@
 [
     "index.html",
     "agenda.html",
-    "support-par-les-navigateurs.html",
+    "etat-du-web-en-2013.html",
+    "html5-html-css-js.html",
+    "de-nombreuses-fonctionnalites.html",
     [
         {
             "filename": "une-amelioration-constante-du-support-par-les-nouveaux-navigateurs-2008.html",
@@ -59,9 +61,7 @@
     "polyfills.html",
     "modernizr.html",
     "modernizr-2.html",
-    "html5-html-css-js.html",
-    "de-nombreuses-fonctionnalites.html",
-    "ameliorer-la-productivite-des-developpements.html",
+    "ameliorer-lexperience-utilisateur-2.html",
     "formulaires-avances.html",
     "nouvelles-proprietes-css3.html",
     "acces-a-los.html",
