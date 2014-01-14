@@ -414,7 +414,7 @@ element.ondrop = function (event) {...}
   <div class="demo">
     <div class="demo-bloc">
       <p>
-        Démo WebSocket non déployé sur Internet. Des exemples sont disponibles sur <a href="http://kaazing.me">Kaazing</a>.
+        Démo WebSocket sur <a href="http://demo.kaazing.com/livefeed/" target="_blank">Kaazing</a>.
       </p>
     </div>
   </div>  
@@ -456,7 +456,7 @@ socket.onmessage = function(event) {
           e.preventDefault();
         }
         var msg = document.getElementById("postmessage-message").value;
-        document.getElementById("postmessage-iframe").contentWindow.postMessage(msg,"http://micreations.org");
+        document.getElementById("postmessage-iframe").contentWindow.postMessage(msg,"http://localhost:9000");
         document.getElementById("postmessage-message").value = "";
         e.returnValue = false;
       }, false);
