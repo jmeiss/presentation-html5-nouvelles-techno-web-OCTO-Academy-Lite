@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<html>
+<head>
+<title>postMessage target</title>
+<style>
+	body { 
+	  font: normal 16px/20px Helvetica, sans-serif;
+	  margin: 0;
+	  padding: 20px;
+	}
+</style>
+</head>
+<body>
+	<strong>&lt;iframe&gt; localisée sur le même domaine</strong>
+	<p id="test">Envoi moi un message !</p>
+	<script type="text/javascript">
+		window.addEventListener('message', function (e) {
+			if (e.preventDefault) {
+				e.preventDefault();
+			}
+			document.getElementById("test").innerHTML = e.origin + " vous dit : " + e.data
+		}, false);
+	</script>
+</body>
+</html>

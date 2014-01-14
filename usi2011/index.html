@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>HTML5 : quelles perspectives pour les applications d'entreprise ?</title>
+
+<!-- Your Slides -->
+<!-- One section is one slide -->
+<!--
+<section>
+  <h1><br/>HTML5 :<br/> quelles perspectives<br/> pour les<br/> applications d'entreprise ?</h1>
+  <footer style="font-size: 24px">Mickaël Morier<br />François Petitit</footer>
+</section>
+
+<section>
+  <h3>Agenda</h3>
+  <div class="liste">
+    <ul>
+      <li>Qu'est-ce que HTML5 ?</li>
+      <li>Ce qui fait rêver les geeks</li>
+      <li>Les opportunités pour les applications d'entreprise</li>
+      <li>HTML5, c'est déjà là</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3>Qu'est ce que HTML5 ?</h3>
+  <object id="logo-html5" data="logo-html5.svg" codetype="image/svg+xml"></object>
+</section>
+-->
+<section>
+  <h3>HTML5 apporte beaucoup de nouvelles fonctionnalités</h3>
+  <div id="overview">
+    <span style="top: 0; left: 241px;">:visited</span>
+    <span style="top: 0; left: 501px;">:valid</span>
+    <span style="top: 6px; left: 356px;">Border Image</span>
+    <span style="top: 6px; left: 569px;">Border Radius</span>
+    <span style="top: 20px; left: 138px;">File API</span>
+    <span style="top: 23px; left: 282px;">&lt;header&gt;, &lt;footer&gt;, &lt;aside&gt;, &lt;article&gt;,...</span>
+    <span style="top: 37px; left: 188px;">formData</span>
+    <span style="top: 51px; left: 313px;">&lt;video&gt;</span>
+    <span style="top: 60px; left: 477px;">Device Orientation</span>
+    <span style="top: 67px; left: 82px;">WebSockets</span>
+    <span style="top: 77px; left: 546px;">Content Acceleration</span>
+    <span style="top: 80px; left: 349px;">CSS3</span>
+    <span style="top: 88px; left: 164px;">Content Editable</span>
+    <span style="top: 95px; left: 325px;">&lt;canvas&gt; 2D</span>
+    <span style="top: 95px; left: 449px;">Web Workers</span>
+    <span style="top: 95px; left: 560px;">Native Drag and Drop</span>
+    <span style="top: 107px; left: 145px;">Cross-Domain XHR</span>
+    <span style="top: 112px; left: 631px;">SVG as an &lt;img&gt;</span>
+    <span style="top: 114px; left: 441px;">Text Shadow</span>
+    <span style="top: 125px; left: 134px;">Geolocation API</span>
+    <span style="top: 133px; left: 490px;">Columns</span>
+    <span style="top: 137px; left: 318px;">placeholder</span>
+    <span style="top: 144px; left: 48px;">History API</span>
+    <span style="top: 150px; left: 583px;">Gradients</span>
+    <span style="top: 161px; left: 173px;">Audio Data API</span>
+    <span style="top: 162px; left: 72px;">localStorage</span>
+    <span style="top: 162px; left: 314px;">calc()</span>
+    <span style="top: 169px; left: 435px;">Structural pseudo-classes</span>
+    <span style="top: 169px; left: 654px;">Forms</span>
+    <span style="top: 185px; left: 123px;">@media Queries</span>
+    <span style="top: 192px; left: 634px;">WOFF</span>
+    <span style="top: 198px; left: 259px;">XHR Level 2</span>
+    <span style="top: 205px; left: 398px;">SVG</span>
+    <span style="top: 214px; left: 495px;">WebGL</span>
+    <span style="top: 215px; left: 114px;">mask, filter, clip-path</span>
+    <span style="top: 223px; left: 574px;">box-shadow</span>
+    <span style="top: 233px; left: 91px;">Transform</span>
+    <span style="top: 239px; left: 481px;">async &amp; defer</span>
+    <span style="top: 240px; left: 312px;">Multiple Backgrounds</span>
+    <span style="top: 241px; left: 676px;">Transition</span>
+    <span style="top: 250px; left: 222px;">IndexedDB</span>
+    <span style="top: 259px; left: 112px;">QuerySelector</span>
+    <span style="top: 260px; left: 555px;">@font-face</span>
+    <span style="top: 270px; left: 326px;">postMessage</span>
+    <span style="top: 275px; left: 432px;">File API</span>
+    <span style="top: 278px; left: 230px;">&lt;audio&gt;</span>
+    <span style="top: 280px; left: 607px;">Application Cache</span>
+  </div>
+</section>
+
+<section>
+  <h3>Ce qui fait rêver les geeks</h3>
+  <div class="liste">
+    <ul>
+      <li><a href="http://mozillademos.org/demos/planetarium/demo.html" target="_blank">Planetarium CSS3</a></li>
+      <li><a href="http://code.gregjopa.com/javascript/audio/musicjs/demo/" target="_blank">Synthèse sonore</a></li>
+      <li><a href="http://people.mozilla.com/~prouget/demos/mashup/video.xhtml" target="_blank">Manipulation de vidéo</a></li>
+      <li><a href="http://www.benjoffe.com/code/demos/canvascape/" target="_blank">Jeux 3D</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="title">
+  <h1>Quelles opportunités pour les applications d'entreprise ?</h1>
+</section>
+
+<section>
+  <h3>Proposer des formulaires avancés</h3>
+  <div class="demo">
+    <form id="form" class="demo-bloc">
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <ol>
+          <li>
+            <label for=name>Prénom</label>
+            <input id=name name=name type=text placeholder="Prénom" required pattern="[a-zA-Z]*">
+          </li>
+          <li>
+            <label for=email>Email</label>
+            <input id=email name=email type=email placeholder="example@domain.com">
+          </li>
+          <li>
+            <label for=phone>Téléphone</label>
+            <input id=phone name=phone type=tel placeholder="+33612345678">
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Enregistrer</button>
+        <div id="form-valid" style="display:none;text-align:center;font-size:0.8em">Formulaire valide</div>
+      </fieldset>
+      <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          document.getElementById('form-valid').style.display = 'block';
+        }, false);
+      </script>
+    </form>
+  </div>
+  <ul class="avantages">
+    <li>Expérience utilisateur amélioré</li>
+    <li>Développeurs plus productifs</li>
+  </ul>
+  <pre class="code">
+&lt;input type=text placeholder="Prénom" required pattern="[a-zA-Z]*"&gt;
+&lt;input type=email placeholder="example@domain.com"&gt;
+&lt;input type=tel placeholder="+33612345678"&gt;
+  </pre>
+</section>
+
+<section>
+  <h3>Améliorer le design de vos applications</h3>
+  <div class="demo">
+    <div id="design">
+      <p>Texte ombré avec une police particulière.<br />Aucune image n'est utilisée pour cette démo !</p>
+    </div>
+  </div>
+  <ul class="avantages">
+    <li>Nouvelles possibilités</li>
+    <li>Accélération graphique pour les animations</li>
+  </ul>
+  <pre class="code">
+@font-face { font-family: 'Cabin Sketch';
+  src: local('CabinSketch Bold'), local('CabinSketch-Bold'), 
+    url('http://themes.googleusercontent.com/font?kit=42') format('woff');
+}
+
+border-radius: 12px; 
+box-shadow: 5px 5px 5px #fff; 
+background-image: linear-gradient(top, #fff, #9cbc2c);
+transform: rotate(7.5deg);
+  </pre>
+</section>
+
+<section>
+  <h3>Gérer les multipes terminaux</h3>
+  <div class="demo">
+    <div class="demo-bloc" style="text-align:center">
+      <a href="http://mediaqueri.es" target="_blank"><img src="mediaqueries.png" /></a>
+    </div>
+  </div>
+  <ul class="avantages">
+    <li>Un site adaptable à tous les écrans</li>
+    <li>Prise en compte de l'orientation du terminal</li>
+  </ul>
+  <pre class="code">
+@media only screen and (max-width:650px) {...}
+@media screen and (min-device-width:768px) {...}
+  </pre>
+</section>
+
+
+<section>
+  <h3>Proposer des services géolocalisés</h3>
+  <div class="demo">
+    <div id="geolocation" class="demo-bloc">
+      <button onclick="findLocation()">Localise moi</button>
+      <p>
+        Latitude : <span id="latitude"></span><br />
+        Longitude : <span id="longitude"></span>
+      </p>
+      <div id="googlemap" style="width:100%; height:200px"></div> 
+    </div>
+  </div>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript">
+    function findLocation() {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var lat = document.getElementById('latitude').innerHTML = position.coords.latitude;
+        var lng = document.getElementById('longitude').innerHTML = position.coords.longitude;
+        var options = { center: new google.maps.LatLng(lat, lng), mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 12 };
+        var map = new google.maps.Map(document.getElementById('googlemap'), options);
+        var marker = new google.maps.Marker({ position: new google.maps.LatLng(lat, lng) });
+        marker.setMap(map);
+      });
+    }
+  </script>
+  <ul class="avantages">
+    <li>Géolocalisation intégrée au navigateur</li>
+  </ul>
+  <pre class="code">
+var position = navigator.geolocation.getCurrentPosition();
+var latitude = position.coords.latitude;
+var longitude = position.coords.longitude;
+  </pre>
+</section>
+
+<section>
+  <h3>Profiter des graphiques vectoriels</h3>
+  <div class="demo">
+    <div id="chart" class="demo-bloc">
+      <div id="chart-buttons">
+        <button id="pie" onclick="displayPie()">Répartition</button>
+        <button id="pie" onclick="displayArea()">Évolution</button>
+      </div>
+      <div id="chart-render" style="width:100%;height:300px"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="highcharts.js"></script>
+  <script type="text/javascript">
+    function displayPie() {
+      var chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'chart-render',
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          backgroundColor: null
+        },
+        title: {
+          text: 'Marché des navigateurs' 
+        },
+        credits: {
+          enabled: false
+        },
+        tooltip: {
+          formatter: function() {
+            return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+          }
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: { enabled: false },
+            showInLegend: true
+          }
+        },
+        legend: {
+          borderColor: '#000',
+          itemStyle: {
+            color: '#000'
+          }
+        },
+        series: [{
+          type: 'pie',
+          name: 'Navigateurs',
+          data: [['Firefox', 36.1], ['IE', 36.5], { name: 'Chrome', y: 18.3, sliced: true, selected: true }, ['Safari', 7.4], ['Opera', 1.1], ['Autres', 0.7]]
+        }]
+      });
+    }
+    function displayArea() {
+      var chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'chart-render',
+          defaultSeriesType: 'areaspline',
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          backgroundColor: null
+        },
+        title: {
+          text: 'Fruits consommés' 
+        },
+        credits: {
+          enabled: false
+        },
+        legend: {
+          borderColor: '#000',
+          itemStyle: {
+            color: '#000'
+          }
+        },
+        xAxis: {
+          categories: ['Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.', 'Dim.' ]
+        },
+        yAxis: {
+          title: null
+        },
+        tooltip: {
+          formatter: function() {
+            return '' + this.x + ' : '+ this.y + ' fruits mangés';
+          }
+        },
+        plotOptions: {
+          areaspline: { fillOpacity: 0.5 }
+        },
+        series: [{ name: 'François', data: [3, 4, 3, 5, 1, 6, 4] }, { name: 'Mickaël', data: [1, 3, 4, 3, 3, 2, 5] }]
+      });
+    }
+  </script>
+  <ul class="avantages">
+    <li>Graphiques adaptables à toutes tailles</li>
+    <li>Graphiques utilisables sur mobile et tablettes</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Permettre les applications déconnectées</h3>
+  <div class="demo">
+    <form id="storage-save-form" class="demo-bloc">
+      <fieldset>
+        <ol>
+          <li>
+            <label for=storage-value>Valeur</label>
+            <input id=storage-value>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Stocker</button>
+      </fieldset> 
+    </form>
+    <br />
+    <form id="storage-get-form" class="demo-bloc">
+      <fieldset>
+        <button type="submit">Récupérer</button>
+      </fieldset> 
+      <fieldset>
+        <p>Valeur stockée = <span id="storage-stored-value"></span></p>
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript">
+    document.getElementById('storage-save-form').addEventListener('submit', 
+      function (e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        localStorage.setItem("usiDemoMsg", document.getElementById("storage-value").value);
+        document.getElementById("storage-value").value = "";
+        e.returnValue = false;
+      }, false);
+    
+    document.getElementById('storage-get-form').addEventListener('submit', 
+      function (e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        document.getElementById("storage-stored-value").innerHTML = localStorage.getItem("usiDemoMsg");
+        e.returnValue = false;
+      }, false);
+  </script>
+  <ul class="avantages">
+    <li>Continuer à travailler même en déplacement</li>
+    <li>Des applications moins dépendantes du serveur</li>
+  </ul>
+  <pre class="code">
+localStorage.setItem("clef", "valeur");
+var value = localStorage.getItem("clef");
+  </pre>
+</section>
+
+<section>
+  <h3>Intégrer les applications Web au bureau</h3>
+  <div class="demo">
+    <div class="demo-bloc">
+      <p>Déplacer dans le cadre une image</p>
+      <div id="dnd-holder"></div>
+    </div>
+  </div>  
+  <ul class="avantages">
+    <li>Drag-n-drop</li>
+    <li>Intégration au système de fichiers</li>
+    <li>Notifications</li>
+  </ul>
+  <pre class="code">
+element.ondragover = function () {...}
+element.ondrop = function (event) {...}
+  </pre>
+  <script type="text/javascript">
+    var holder = document.getElementById('dnd-holder');
+    holder.ondragover = function () { this.className = 'hover'; return false; };
+    holder.ondragend = function () { this.className = ''; return false; };
+    holder.ondrop = function (e) {
+      this.className = '';
+      e.preventDefault();
+      var file = e.dataTransfer.files[0], reader = new FileReader();
+      reader.onload = function (event) {
+        holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+      };
+      reader.readAsDataURL(file);
+      return false;
+    };
+  </script>
+</section>
+
+<section>
+  <h3>Aller vers un Web temps-réel</h3>
+  <div class="demo">
+    <div class="demo-bloc">
+      <p>
+        Démo WebSocket non déployé sur Internet. Des exemples sont disponibles sur <a href="http://kaazing.me">Kaazing</a>.
+      </p>
+    </div>
+  </div>  
+  <ul class="avantages">
+    <li>Push de données depuis le serveur vers le navigateur</li>
+    <li>Réduction de la bande passante consommée</li>
+  </ul>
+  <pre class="code">
+var socket = new WebSocket('ws://localhost:9000');
+socket.onmessage = function(event) {
+  var data = event.data;
+  ...
+}
+  </pre>
+</section>
+
+<section>
+  <h3>Faire communiquer simplement les applications</h3>
+  <div class="demo">
+    <form id="postmessage-form" class="demo-bloc">
+      <fieldset>
+        <ol>
+          <li>
+            <label for=postmessage-message>Message</label>
+            <input id=postmessage-message>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Envoyer</button>
+      </fieldset>
+      <iframe id="postmessage-iframe" src="postmessage-target.html"></iframe> 
+    </form>
+  </div>
+  <script type="text/javascript">
+    document.getElementById('postmessage-form').addEventListener('submit', 
+      function (e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        var msg = document.getElementById("postmessage-message").value;
+        document.getElementById("postmessage-iframe").contentWindow.postMessage(msg,"http://micreations.org");
+        document.getElementById("postmessage-message").value = "";
+        e.returnValue = false;
+      }, false);
+  </script>
+  <ul class="avantages">
+    <li>Communication par message au sein d'une page</li>
+    <li>Communication entre différents domaines</li>
+  </ul>
+  <pre class="code">
+envoyeur.contentWindow.postMessage("bonjour","http://domain.com");
+destinataire.window.addEventListener("message", function (event) {...});
+  </pre>
+</section>
+
+<section>
+  <h3>Oser le multimedia</h3>
+  <div class="demo">
+    <div class="demo-bloc" style="text-align:center">
+          <video controls width="320" height="176">
+                <source src="jellies.ogg.ogv" type="video/ogg" /><!-- Firefox / Opera -->
+                <track src="jellies.srt" kind="subtitle" srclang="en-US" label="English" />
+                Votre navigateur ne supporte pas la vidéo HTML5 ou le codec Ogg
+          </video>
+    </div>
+  </div>  
+  <ul class="avantages">
+    <li>Lire des fichiers audio et vidéo sur tous les supports</li>
+    <li>Synthèse vocale</li>
+    <li>Mashup, composition de média</li>
+    <li>Web 3D</li>
+  </ul>
+  <pre class="code">&ltvideo controls width="320" height="176"&gt<br/>  &ltsource src="guillermo.ogv" type="video/ogg" &gt</br>  &lttrack src="jellies.srt" kind="subtitle" srclang="en-US"<br/>       label="English" &gt<br/>&lt/video&gt</br></pre>
+  <script src="jquery.videosub.min"></script>
+  <script>jQuery('video').videoSub()</script>
+</section>
+
+<section>
+  <h3>HTML5 est déjà là</h3>
+  <div id="browser-comparator" align="center">
+    <table >
+      <thead>
+        <tr>
+            <th></th>
+            <th><img class="logo" src="logo-firefox.png" alt="logo Firefox" title="Firefox 5" /></th>
+            <th><img class="logo" src="logo-safari.png" alt="logo Safari" title="Safari 5.0.5" /></th>
+            <th><img class="logo" src="logo-ie9.png" alt="logo IE9" title="Internet Explorer 9"/></th>
+            <th><img class="logo" src="logo-chrome.png" alt="logo Chrome" title="Chrome 12" /></th>
+            <th><img class="logo" src="logo-opera.svg" alt="logo Opera" title="Opera 11.5" /></th>
+        </tr>
+      </thead>
+      <tbody style="font-size: 15px">
+        <tr>
+          <td>Local Storage</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Session Storage</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Post Message</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Offline Applications</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Web Workers</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Query Selector</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>IndexDB Database</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+        </tr>
+        <tr>
+          <td>Drag and Drop</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+        </tr>
+        <tr>
+          <td>History Management</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+        </tr>
+        <tr>
+          <td>WebSockets</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>Geolocation</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>SVG in HTML</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+        </tr>
+        <tr>
+          <td>Canvas</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+        <tr>
+          <td>WebGL</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+        </tr>
+        <tr>
+          <td>FileReader API</td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="cross.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+          <td align="center"/><img src="tick.png"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="title">
+  <h3>Conclusion</h3>
+  <div class="liste">
+    <ul>
+      <li>HTML5 est déjà prêt</li>
+      <li>HTML5 offre de nouvelles opportunités</li>
+      <li>HTML5 simplifie le développement</li>
+    </ul>
+   </div>
+</section>
+
+<section>
+  <h3>Crédits</h3>
+  <div class="liste" style="font-size: 14px">
+    <ul>
+      <li>Slides HTML5 : <a href="https://github.com/paulrouget/dzslides" target="_blank">DZSlides</a></li>
+      <li>Démo planetarium : <a href="http://mozillademos.org/demos/planetarium/demo.html" target="_blank">http://mozillademos.org/demos/planetarium/demo.html</a></li>
+      <li>Démo synthèse sonore : <a href="http://code.gregjopa.com/javascript/audio/musicjs/demo/" target="_blank">http://code.gregjopa.com/javascript/audio/musicjs/demo/</a></li>
+      <li>Démo manipulation de vidéo : <a href="http://people.mozilla.com/~prouget/demos/mashup/video.xhtml" target="_blank">http://people.mozilla.com/~prouget/demos/mashup/video.xhtml</a></li>
+      <li>Démo jeu 3D : <a href="http://www.benjoffe.com/code/demos/canvascape/" target="_blank">http://www.benjoffe.com/code/demos/canvascape/</a></li>
+      <li>Démo vidéo + sous-titres : <a href="http://www.storiesinflight.com/js_videosub/" target="_blank">http://www.storiesinflight.com/js_videosub/</a></li>
+      <li>Librairie de chart : <a href="http://www.highcharts.com" target="_blank">http://www.highcharts.com</a></li>
+      <li>Exemple Media Queries : <a href="http://mediaqueri.es" target="_blank">http://mediaqueri.es</a></li>
+    </ul>
+   </div>
+</section>
+
+<!-- Your Style -->
+<!-- Define the style of you presentation -->
+
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold&v1' rel='stylesheet' type='text/css'>
+
+<style>
+  html { background-color: black; }
+  a { color:#f06;text-decoration:none } a:hover {text-decoration: underline;}
+  strong {color: #FF0066}
+  body {
+    font-family: 'Oswald', arial, serif;
+    font-size: 2em;
+    color: #fff;
+    background: #1c1c1c;
+    background-image: -moz-radial-gradient(center 45deg, #333 0%, #1c1c1c 50%);
+    background-image: -moz-radial-gradient(center 45deg, #333 0%, #1c1c1c 50%);
+  }
+
+  h1, h2, h3 {
+    color:#FAE50B;
+    color:#4CFF00;
+    color:#46D1FF;
+    margin-top: 20px;
+    text-align: center;
+  }
+  q, p.seul {
+    margin: 50px auto 0;
+    width: 600px;
+  }
+  footer { position: absolute; bottom: 30px; right: 30px; text-align: right; font-size: 16px }
+
+  #logo-html5 {
+    width:300px;
+    height:300px;
+    margin:50px 225px;
+    padding:20px;
+  }
+  .title {height:600px;display:table}
+  .title h1 {vertical-align:middle; margin:0; text-align:center;display:table-cell}
+  .title footer {display:none}
+  
+  #overview span{
+    margin-top:180px;
+    font-size: 16px;
+    color:#fff;
+    position: absolute;
+  }
+  
+  div.demo {
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    width:350px;
+    margin:30px 25px 0;
+  }
+
+  div.liste {
+    font-family:Arial, Helvetica, sans-serif;
+    width:750px;
+    margin:50px 25px 0;
+    padding:20px;
+  }
+  
+  div.liste li {
+    list-style:none;
+    margin-bottom:1.5em;
+  }
+
+  ul.avantages {
+    float:left;
+    font-size: 28px;
+    margin-top: 70px;
+    border-left:5px solid white;
+    padding-left:20px;
+    width: 375px;
+    display: inline-block;
+  }
+  ul.avantages li {
+    list-style-type: none;
+    margin-top:1.5em;
+  }
+  ul.avantages li:first-child {
+    margin-top:0;
+  }
+  
+  .code {
+    clear:both;
+    float:left;
+    margin:30px 10px 0;
+    font-size:16px;
+  }
+  
+  .demo-bloc {
+    color:#000;
+    background:#9cbc2c;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    padding:10px;
+    width:330px;
+    margin:0;
+  }
+  .demo-bloc button {
+    background: #352726;
+    border: none;
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px;
+    color: #fff;
+    display: block;
+    margin:auto;
+    letter-spacing: 1px;
+    padding: 7px 25px;
+  }
+  .demo-bloc button:hover {
+    background: #1e2506;
+    cursor: pointer;
+  }
+  .demo-bloc p {
+    font-size:22px;
+    margin:10px 0;
+  }
+  
+  form fieldset {
+    border:0;
+  }
+  form legend {
+    font-size:16px;
+    font-weight:bold;
+    padding-bottom:10px;
+    text-shadow:0 1px 1px #c0d576;
+  }
+  form ol li {
+    background: #b9cf6a;
+    border:2px solid #e3ebc3;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    line-height: 30px;
+    padding: 5px 10px;
+    list-style-type: none;
+    margin-bottom:10px;
+  }
+  form label {
+    display: inline-block;
+    font-size: 13px;
+    width: 80px;
+  }
+  form input {
+    background: #fff;
+    border:0;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+    font-style:italic;
+    outline: none;
+    padding: 5px;
+    width: 170px;
+  }
+  
+  div#design {
+    width:300px;
+    margin-top:30px;
+    padding:10px;
+    color: #000;
+    -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; 
+    -moz-box-shadow: 5px 5px 5px #fff; -webkit-box-shadow: 5px 5px 5px #fff; box-shadow: 5px 5px 5px #fff; 
+    background-image: -webkit-linear-gradient(top, #fff, #9cbc2c); background-image: -moz-linear-gradient(top, #fff, #9cbc2c); background-image: -ms-linear-gradient(top, #fff, #9cbc2c); background-image: -o-linear-gradient(top, #fff, #9cbc2c); background-image: linear-gradient(top, #fff, #9cbc2c);
+    -moz-transform: rotate(7.5deg); -o-transform: rotate(7.5deg); -webkit-transform: rotate(7.5deg); -ms-transform: rotate(7.5deg); transform: rotate(7.5deg);  
+  }
+  div#design p {
+    width: 300px;
+    margin:auto;
+    text-shadow:2px 2px 3px #C66A00;
+    font-family: 'Cabin Sketch', arial, serif;
+  }
+  
+  div#googlemap {
+    border:2px solid #e3ebc3;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+  }
+  
+  #chart-buttons {
+    width: 100%;
+    text-align:center;
+  }
+  #chart-buttons button {
+    display: inline;
+  }
+  
+  #dnd-holder {
+    width:250px;
+    height:250px;
+    margin:10px auto;
+    border:10px dashed #ccc;
+  }
+  #dnd-holder.hover {
+    border:10px dashed #000;
+  }
+
+  iframe#postmessage-iframe {
+    width:100%;
+    margin-top:10px;
+    border:2px solid #e3ebc3;
+    background-color:white;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+  }
+  
+  a#readiness {
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:1em;
+  }
+  
+  #browser-comparator {margin-top:10px}
+  #browser-comparator th {width:100px}
+  #browser-comparator th:first-child {width:150px}
+  #browser-comparator .logo {
+    width:50px;
+    max-height:50px;
+  }
+  #browser-comparator td img {width:16px;height:16px}
+
+  /* Transition effect */
+  section {
+    -moz-transition: top 400ms linear 0s;
+    -webkit-transition: top 400ms linear 0s;
+    -o-transition: top 400ms linear 0s;
+    -ms-transition: top 400ms linear 0s;
+    transition: top 400ms linear 0s;
+  }
+  section { top: -150%; }
+  section[aria-selected] { top: 0; }
+  section[aria-selected] ~ section { top: +150% }
+</style>
+
+
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; }
+  details {display: none;}
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto;}
+  body {display: none}
+  body.loaded {display: block}
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "0"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
